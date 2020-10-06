@@ -3,11 +3,111 @@
   --Bright-Yellow: hsl(71, 73%, 54%);
   --Light-Gray: hsl(204, 43%, 93%);
   --Grayish-Blue: hsl(218, 22%, 67%);
+  --Light-Cyan: hsla(179, 75%, 64%, 1);
 }
 
-html {
+* {
   box-sizing: border-box;
   font-family: 'Karla', sans-serif;
+  font-size: 16px;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+h1 {
+  color: var(--Cyan);
+  font-weight: 700;
+}
+
+.community_box {
+  background-color: white;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.community_box h2 {
+  color: var(--Bright-Yellow);
+  font-weight: 700;
+}
+
+.community_box p {
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+}
+
+.sub_box {
+  background-color: var(--Cyan);
+  grid-column: 1;
+  border-radius: 0px 0px 0px 8px;
+  padding-left: 40px;
+  padding-top: 25px;
+}
+
+.sub_box h2 {
+  color: white;
+  font-weight: 700;
+}
+
+.sub_box p {
+  color: white;
+  font-weight: 400;
+}
+
+.why_box {
+  background-color: var(--Light-Cyan);
+  grid-column: 2;
+  border-radius: 0px 0px 8px 0px;
+}
+
+.why_box h2 {
+  color: white;
+  font-weight: 700;
+  padding-left: 40px;
+  padding-top: 25px;
+}
+
+.why_box ul {
+  color: white;
+  font-weight: 400;
+}
+
+/* .why_box h2 {
+  padding: 40px;
+} */
+strong {
+  font-weight: 90px;
+}
+
+button {
+  background-color: var(--Bright-Yellow);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 70px;
+  text-align: center;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  cursor: default;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  position: fixed;
+  width: 650px;
+  top: 300px;
+  left: 300px;
+  box-shadow: 8px 6px 8px 8px rgba(0, 0, 0, 0.1), 8px 6px 8px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+#price {
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .attribution {
