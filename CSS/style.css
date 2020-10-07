@@ -24,7 +24,7 @@ h1 {
 }
 
 .community_box {
-  background-color: white;
+  background-color: #ffffff;
   padding-left: 40px;
   padding-top: 20px;
   border-radius: 8px;
@@ -127,10 +127,10 @@ ul {
   color: hsl(228, 45%, 44%);
 }
 
+/* mobile devices only */
 @media only screen and (max-width: 500px) {
   .boxes, .container {
     display: block;
-    grid-gap: none;
   }
 
   .sub_box {
