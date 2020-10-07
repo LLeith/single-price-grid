@@ -12,6 +12,10 @@
   font-size: 16px;
 }
 
+html {
+  background-color: var(--Light-Gray);
+}
+
 .boxes {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -25,9 +29,8 @@ h1 {
 
 .community_box {
   background-color: #ffffff;
-  padding-left: 40px;
-  padding-top: 20px;
   border-radius: 8px;
+  padding: 20px 0 20px 40px;
 }
 
 .community_box h2 {
@@ -40,6 +43,7 @@ h1 {
   color: var(--Grayish-Blue);
   font-weight: 400;
   margin-bottom: 40px;
+  line-height: 1.6;
 }
 
 .sub_box {
@@ -79,6 +83,7 @@ h1 {
 .why_box ul {
   color: var(--Light-Gray);
   font-weight: 400;
+  line-height: 1.4;
 }
 
 strong {
@@ -94,6 +99,7 @@ button {
   text-align: center;
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   cursor: default;
+  margin-top: 18px;
 }
 
 button:hover {
@@ -127,18 +133,37 @@ ul {
   color: hsl(228, 45%, 44%);
 }
 
-/* mobile devices only */
+/* smaller devices only */
 @media only screen and (max-width: 500px) {
   .boxes, .container {
     display: block;
   }
 
-  .sub_box {
-    border-radius: 0px;
-    padding: 25px 0 30px 40px;
-  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .why_box h2 {
+      margin-top: 0px;
+    }
 
-  .why_box {
-    border-radius: 0px 0px 8px 8px;
+    .container {
+      max-width: 320px;
+      margin: auto;
+      margin-top: 5vh;
+    }
+
+    .sub_box {
+      border-radius: 0px;
+      padding: 25px 0 30px 40px;
+    }
+
+    .why_box {
+      border-radius: 0px 0px 8px 8px;
+    }
+
+    h1 {
+      font-size: 1.2em;
+    }
+
+    .community_box h2 {
+      font-size: 1em;
+    }
   }
-}
